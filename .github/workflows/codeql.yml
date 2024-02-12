@@ -27,7 +27,7 @@ jobs:
       - name: CodeQL init
         uses: github/codeql-action/init@v3
         with:
-          language: java
+          languages: java
 
       - name: CodeQL autobuild
         uses: github/codeql-action/autobuild@v3
