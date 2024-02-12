@@ -11,7 +11,9 @@ public class MockSqlConnection {
 	public MockSqlConnection() {};
 
   public void sqlConnection(String username, String password) {
-    String jdbcUrl = "someJDBCURL";
+    String jdbcUrl = "jdbc:mysql://localhost:3306/spring-demo";
+
+    System.out.println(username + " " + password);
 
     try {
       Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
